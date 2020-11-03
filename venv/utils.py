@@ -22,7 +22,7 @@ def decompressRequestSoup(url):
     """
     r_comp = requests.get(url)
     decomp = gzip.GzipFile(fileobj=BytesIO(r_comp.content))
-    soup = BeautifulSoup(decomp.read())
+    soup = BeautifulSoup(decomp.read(), features="html.parser")
     return soup
 
 
@@ -39,7 +39,7 @@ def requestSoup(url):
 
     """
     r = requests.get(url)
-    soup = BeautifulSoup(r.content)
+    soup = BeautifulSoup(r.content, features="html.parser")
     return soup
 
 
@@ -62,14 +62,14 @@ def getGeneralLinks(url, country, gender):
 
     """
     soup = decompressRequestSoup(url)
-    links = soup.find('body').findAll('loc')
+    links = soup.findAll('loc')
     for link in links:
         href = link.text
         if re.search(country, href) != None:
             time_1 = time.time()
             es_url = href
             es_soup = decompressRequestSoup(es_url)
-            es_links = es_soup.find('body').findAll('loc')
+            es_links = es_soup.findAll('loc')
             es_links_mujer = [link.text for link in es_links
                               if re.search(gender, link.text) != None]
             time_2 = time.time()
@@ -186,5 +186,6 @@ def getItemsDataframe(url, country, gender, item_types, keyword_script, output):
             new_row = {'item_code': item_code, 'item_desc': desc, 'item_composition': compo, 'item_price': preu}
             # append row to the dataframe
             df_items = df_items.append(new_row, ignore_index=True)
+            items_json = df_items.to_json(orient='table')
 
-    return df_items
+    return print(items_json)
