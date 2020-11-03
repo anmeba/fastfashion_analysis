@@ -7,16 +7,18 @@ import gzip
 import json
 import re
 
-url = 'https://www.zara.com/sitemaps/sitemap-index.xml.gz'
-
 
 def decompressRequestSoup(url):
-    """
-    Given an url perform a get request,
+    """Given an url perform a get request,
     decompress content and inject in soup
     object.
-    Args: an url wich returnes compressed content
+
+    Args:
+    :param url: an url wich returnes compressed
+    content
+
     Return: soup object of the response contents
+
     """
     r_comp = requests.get(url)
     decomp = gzip.GzipFile(fileobj=BytesIO(r_comp.content))
@@ -27,11 +29,14 @@ def decompressRequestSoup(url):
 # decompressRequestSoup(url)
 
 def requestSoup(url):
-    """
-    Given an url perform a get request and
+    """Given an url perform a get request and
     set response in a soup object.
-    Args: url
+
+    Args:
+    :param url: an url to soup, string.
+
     Return: soup object of get response
+
     """
     r = requests.get(url)
     soup = BeautifulSoup(r.content)
@@ -39,17 +44,22 @@ def requestSoup(url):
 
 
 # links = soup.find('body').findAll('loc')
-country = 'sitemap-es-es'
-gender = 'mujer'
-
 
 def getGeneralLinks(url, country, gender):
     """
-    Get all general clothing urls from web sitemap
-    Args: url (sitemap), country (pattern string),
-    gender (pattern string, language depends on
-    coutry pattern)
-    Returns: list of general clothing types urls
+
+
+    """
+    """Get all general clothing urls from web sitemap
+
+    Args:
+    :param url: sitemap, string. 
+    :param country: pattern string.
+    :param gender: pattern string, language depends on
+    country pattern.
+    
+    Return: list of general clothing types urls
+
     """
     soup = decompressRequestSoup(url)
     links = soup.find('body').findAll('loc')
@@ -60,7 +70,8 @@ def getGeneralLinks(url, country, gender):
             es_url = href
             es_soup = decompressRequestSoup(es_url)
             es_links = es_soup.find('body').findAll('loc')
-            es_links_mujer = [link.text for link in es_links if re.search(gender, link.text) != None]
+            es_links_mujer = [link.text for link in es_links
+                              if re.search(gender, link.text) != None]
             time_2 = time.time()
             resp_time = time_2 - time_1
             time.sleep(resp_time)
@@ -72,21 +83,21 @@ def getGeneralLinks(url, country, gender):
 
 # https://stackoverflow.com/questions/33406313/how-to-match-any-string-from-a-list-of-strings-in-regular-expressions-in-python
 
-item_types = ['vestido', 'camiseta', 'blusa']
-
 
 def selectGeneralType(url, country, gender, item_types):
-    """
-    Get general types of clothing filtered url list from
+    """Get general types of clothing filtered url list from
     web sitemap.
+
     Args:
-    -  url (sitemap)
-    - country (pattern string)
-    - gender (pattern string, language depends on
+    ;url: (sitemap)
+    ;country: (pattern string)
+    ;gender: (pattern string, language depends on
     coutry pattern)
-    - item_types (list of types of clothing to
+    ;item_types: (list of types of clothing to
     filter).
-    Returns: list of items urls.
+
+    Returns: list of general clothing sections urls.
+
     """
     link_list = getGeneralLinks(url, country, gender)
     pattern = '|'.join(item_types)
@@ -95,10 +106,24 @@ def selectGeneralType(url, country, gender, item_types):
     return type_links
 
 
-selectGeneralType(url, country, gender, item_types)
+#selectGeneralType(url, country, gender, item_types)
 
 
 def getItemUrl(url, country, gender, item_types):
+    """Given a list of general cloth sections it
+     gets the url of each item in each.
+
+    Args:
+    :param url: (sitemap)
+    :param country: (pattern string)
+    :param gender: (pattern string, language depends on
+    :param coutry pattern)
+    :param item_types: (list of types of clothing to
+    filter).
+
+    Retturns: list of items urls.
+
+    """
     gen_urls = selectGeneralType(url, country, gender, item_types)
     for gen_url in gen_urls:
         time_1 = time.time()
@@ -113,13 +138,26 @@ def getItemUrl(url, country, gender, item_types):
         return item_urls
 
 
-len(getItemUrl(url, country, gender, item_types))
-
-keyword_script = 'detailedComposition'
-output = 50
+#len(getItemUrl(url, country, gender, item_types))
 
 
 def getItemsDataframe(url, country, gender, item_types, keyword_script, output):
+    """Given the list of items urls, extract key features (price, composition,
+    description) and build a dataset
+
+    :param url: (sitemap)
+    :param country: (pattern string)
+    :param gender: (pattern string, language depends on
+    :param coutry pattern)
+    :param item_types: (list of types of clothing to
+    filter).
+    :param keyword_script: string to match right script
+    :param output: limit of items that we want to get
+
+    :return: a dataset with key informaition of every item (price, composition,
+    description)
+
+    """
     df_items = pd.DataFrame(columns=['item_code', 'item_desc', 'item_composition', 'item_price'])
     item_urls = getItemUrl(url, country, gender, item_types)
     # hi ha 1091 items de camiseta, aquí treuré nomès els 100 primers items
