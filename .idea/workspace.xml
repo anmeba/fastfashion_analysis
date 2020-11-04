@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5c04b7da-a64d-4d1c-aa59-d96f8712919d" name="Default Changelist" comment="added main zara_scrapper.py and hotfixed utils function getGeneralLinks" />
+    <list default="true" id="5c04b7da-a64d-4d1c-aa59-d96f8712919d" name="Default Changelist" comment="added main zara_scrapper.py and hotfixed utils function getGeneralLinks">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/utils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +45,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="R2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604438039659</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="encodings.xml and workspace">
+      <created>1604522868629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604522868630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,7 +119,8 @@
     <MESSAGE value="added settings.py and utils.py function definitions" />
     <MESSAGE value="main" />
     <MESSAGE value="added main zara_scrapper.py and hotfixed utils function getGeneralLinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="added main zara_scrapper.py and hotfixed utils function getGeneralLinks" />
+    <MESSAGE value="encodings.xml and workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="encodings.xml and workspace" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2635" y="223" key="#xdebugger.evaluate" timestamp="1604435040703">
@@ -159,6 +171,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2637" y="308" key="git4idea.merge.GitMergeDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604438735815" />
+    <state x="345" y="129" key="git4idea.merge.GitPullDialog" timestamp="1604522885346">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="345" y="129" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1604522885346" />
     <state x="2364" y="288" width="672" height="678" key="search.everywhere.popup" timestamp="1604431743053">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

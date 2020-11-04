@@ -144,7 +144,6 @@ def getItemUrl(url, country, gender, item_types):
 def getItemsDataframe(url, country, gender, item_types, keyword_script, output):
     """Given the list of items urls, extract key features (price, composition,
     description) and build a dataset
-
     :param url: (sitemap)
     :param country: (pattern string)
     :param gender: (pattern string, language depends on
@@ -153,12 +152,15 @@ def getItemsDataframe(url, country, gender, item_types, keyword_script, output):
     filter).
     :param keyword_script: string to match right script
     :param output: limit of items that we want to get
-
     :return: a dataset with key informaition of every item (price, composition,
     description)
-
     """
-    df_items = pd.DataFrame(columns=['item_code', 'item_desc', 'item_composition', 'item_price'])
+    df_items = pd.DataFrame(columns=['item_code',
+                                     'item_name',
+                                     'item_desc',
+                                     'item_composition_ext',
+                                     'item_composition_int',
+                                     'item_price'])
     item_urls = getItemUrl(url, country, gender, item_types)
     # hi ha 1091 items de camiseta, aquí treuré nomès els 100 primers items
     i = 0
@@ -177,15 +179,47 @@ def getItemsDataframe(url, country, gender, item_types, keyword_script, output):
                 ';window.zara.viewPayload = window.zara.dataLayer;', '').replace(';window.zara.dataLayer =', '')
             parsed = json.loads(item_info)
             # print(json.dumps(parsed, indent=4, sort_keys=True))
+
+            ##name
+            name = parsed['product']['name']
+
             ## Descripció
             desc = parsed['product']['detail']['rawDescription']
-            ## Composició
-            compo = parsed['product']['detail']['detailedComposition']['parts'][0]['areas']
+
             ## Preu
             preu = parsed['product']['detail']['colors'][0]['price']
-            new_row = {'item_code': item_code, 'item_desc': desc, 'item_composition': compo, 'item_price': preu}
-            # append row to the dataframe
-            df_items = df_items.append(new_row, ignore_index=True)
-            items_json = df_items.to_json(orient='table')
 
-    return print(items_json)
+            ## Composició
+            compo_ext = parsed['product']['detail']['detailedComposition']['parts'][0]['components']
+            try:
+                compo_int = parsed['product']['detail']['detailedComposition']['parts'][1]['components']
+                new_row = {'item_code': item_code,
+                           'item_name': name,
+                           'item_desc': desc,
+                           'item_composition_ext': compo_ext,
+                           'item_composition_int': compo_int,
+                           'item_price': preu}
+                # append row to the dataframe
+                df_items = df_items.append(new_row, ignore_index=True)
+                items_json = df_items.to_json(orient='table')
+            except IndexError:
+                new_row = {'item_code': item_code,
+                           'item_name': name,
+                           'item_desc': desc,
+                           'item_composition_ext': compo_ext,
+                           'item_composition_int': "",
+                           'item_price': preu}
+                # append row to the dataframe
+                df_items = df_items.append(new_row, ignore_index=True)
+                items_json = df_items.to_json(orient='table')
+
+            '''
+            intento separar el que es el material i el que es el percentatge
+            compo_int = parsed['product']['detail']['detailedComposition']['parts'][1]['components'][0]['material']
+            '''
+
+            # append row to the dataframe
+            # df_items = df_items.append(new_row, ignore_index=True)
+            # items_json = df_items.to_json(orient='table')
+
+    return df_items
