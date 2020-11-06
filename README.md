@@ -1,8 +1,22 @@
 # fastfashion_analysis
 
-https://oecotextiles.blog/2011/01/19/estimating-the-carbon-footprint-of-a-fabric/
+
 
 tela necesaria per a les peces (Ample[m] x llarg[m])[m2]:
+
+| Peces                           | Ample [m] | Larg [m] | TOTAL [m^2] |
+| ------------------------------- |:---------:| :-------:|------------:|
+| minifaldilla                    |   0,50    |   1,50   |    0,75     |
+| faldilla mitja cama             |   0,75    |   1,50   |    1,125    |
+| faldilla llarga                 |   1,00    |   1,50   |    1,5      |
+| Pantalons llargs                |   1,10    |   1,50   |    1,65     |
+| Jaqueta                         |   1,50    |   1,50   |    2,25     |
+| Brusa maniga curta / samarreta  |   1,25    |   1,50   |    1,875    |
+| Brusa maniga llarga / samarreta |   1,50    |   1,50   |    2,25     |
+| Vestit curt                     |   1,25    |   1,50   |    1,875    |
+| Vestit maniga                   |   1,75    |   1,50   |    2,625    |
+
+
 - minifaldilla : 0,50 x 1,50 = 0,75 m^2
 - faldilla mitja cama: 0,75 x 1,50 = 1,125 m^2
 - faldilla llarga: 1,00 x 1,50 = 1,5 m^2
@@ -13,6 +27,7 @@ tela necesaria per a les peces (Ample[m] x llarg[m])[m2]:
 - Vestit curt: 1,25 x 1,50 = 1,875 m^2
 - Vestit maniga: 1,75 x 1,50 = 2,625 m^2
 
+font= https://www.ohmotherminediy.com/aprender-coser-cuanta-tela-comprar-para/
 
 --------------
 
