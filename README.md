@@ -2,13 +2,19 @@
 
 https://oecotextiles.blog/2011/01/19/estimating-the-carbon-footprint-of-a-fabric/
 
+tela necesaria per a les peces (Ample[m] x llarg[m])[m2]:
+- minifaldilla : 0,50 x 1,50 = 0,75 m^2
+- faldilla mitja cama: 0,75 x 1,50 = 1,125 m^2
+- faldilla llarga: 1,00 x 1,50 = 1,5 m^2
+- Pantalons llargs: 1,10 x 1,50 = 1,65 m^2
+- Jaqueta: 1,50 x 1,50 = 2,25 m^2
+- Brusa maniga curta / samarreta: 1,25 x 1,50 = 1,875 m^2
+- Brusa maniga llarga / samarreta: 1,50 x 1,50 = 2,25 m^2
+- Vestit curt: 1,25 x 1,50 = 1,875 m^2
+- Vestit maniga: 1,75 x 1,50 = 2,625 m^2
 
--samarretes
-Ample x llarg: 49 x 63
 
-
-
-
+--------------
 
 
 KG of CO2 emissions per ton of spun fiber:
@@ -23,6 +29,7 @@ KG of CO2 emissions per ton of spun fiber:
 
 
 
+Embodied Energy used in production of various fibers:
 
 | Tables            | energy use in MJ per KG of fiber: |
 | ------------------|----------------------------------:|
@@ -35,4 +42,6 @@ KG of CO2 emissions per ton of spun fiber:
 | acrylic           | 175                               | 
 | Nylon             | 250                               | 
 
+
+source: https://oecotextiles.blog/2011/01/19/estimating-the-carbon-footprint-of-a-fabric/
 
