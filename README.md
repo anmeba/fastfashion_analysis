@@ -6,13 +6,13 @@ tela necesaria per a les peces (Ample[m] x llarg[m])[m2]:
 
 | Peces                           | Ample [m] | Larg [m] | TOTAL [m^2] |
 | ------------------------------- |:---------:| :-------:|------------:|
-| minifaldilla                    |   0,50    |   1,50   |    0,75     |
+| minifaldilla                    |   0,50    |   1,50   |    0,750    |
 | faldilla mitja cama             |   0,75    |   1,50   |    1,125    |
-| faldilla llarga                 |   1,00    |   1,50   |    1,5      |
-| Pantalons llargs                |   1,10    |   1,50   |    1,65     |
-| Jaqueta                         |   1,50    |   1,50   |    2,25     |
+| faldilla llarga                 |   1,00    |   1,50   |    1,500    |
+| Pantalons llargs                |   1,10    |   1,50   |    1,650    |
+| Jaqueta                         |   1,50    |   1,50   |    2,250    |
 | Brusa maniga curta / samarreta  |   1,25    |   1,50   |    1,875    |
-| Brusa maniga llarga / samarreta |   1,50    |   1,50   |    2,25     |
+| Brusa maniga llarga / samarreta |   1,50    |   1,50   |    2,250    |
 | Vestit curt                     |   1,25    |   1,50   |    1,875    |
 | Vestit maniga                   |   1,75    |   1,50   |    2,625    |
 
