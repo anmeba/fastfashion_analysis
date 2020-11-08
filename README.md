@@ -6,7 +6,23 @@ Entenem com a **Fast Fashion** el fenomen per el qual s’introdueixen col·lecc
 
 Aquest fenomen genera impactes ecològics com són l’alt consum de recursos naturals i productes químics a més de la generació d’abocaments i emissions. La industria de la moda es troba entre les més contaminats del món. 
 
+## Descripció del dataset
 
+
+
+
+
+## Contingut
+
+
+
+
+## Inspiració
+
+S'ha obtingut el dataset mencionat per tal de poder dur a terme un estudi de: 
+- Quin és el ús de materies primes per a fer les diferents peces. 
+- Es pretendrà analitzar quin és el consum energetic i quin és el volum de recursos naturals utilitzats en el procés de fabricació.
+- Quin és el impacte economic.
 
 
 
