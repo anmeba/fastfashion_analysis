@@ -8,13 +8,18 @@ Aquest fenomen genera impactes ecològics com són l’alt consum de recursos na
 
 ## Descripció del dataset
 
-
-
+El dataset proposat recull els diferents productes de dona de la marca Zara
 
 
 ## Contingut
 
-
+el contingut del dataset està format per:
+  - Nom
+  - Preu
+  - Descripció
+  - Composició
+  - Col.lecció Join Life
+  
 
 
 ## Inspiració
