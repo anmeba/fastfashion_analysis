@@ -1,6 +1,11 @@
 # fastfashion_analysis
 
 
+Entenem com a **Fast Fashion** el fenomen per el qual s’introdueixen col·leccions de roba que segueixen les últimes tendències de la moda i que han estat dissenyades i fabricades de forma accelerada i a baix cost. Empreses com __Inditex__, amb __Zara__ com a marca insígnia, abanderen aquesta filosofia. 
+Aquest fenomen genera impactes ecològics com són l’alt consum de recursos naturals i productes químics a més de la generació d’abocaments i emissions. La industria de la moda es troba entre les més contaminats del món. 
+
+
+
 font: https://www.researchgate.net/publication/340635670_The_environmental_price_of_fast_fashion
 https://www.contreebute.com/blog/que-es-el-fast-fashion-y-por-que-esta-haciendo-de-la-moda-un-negocio-insostenible
 
