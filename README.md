@@ -6,95 +6,46 @@ Entenem com a **Fast Fashion** el fenomen per el qual s’introdueixen col·lecc
 
 Aquest fenomen genera impactes ecològics com són l’alt consum de recursos naturals i productes químics a més de la generació d’abocaments i emissions. La industria de la moda es troba entre les més contaminats del món. 
 
+## Membres de l'equip
+- Ana Marrodan Badell 
+- Mireia Solanich Ventura
+
+
 ## Descripció del dataset
 
-El dataset proposat recull els diferents productes de dona de la marca Zara
+El dataset proposat està composat per dos fitxer csv 
+itemDimension: es recull la informació de les peces de la col·lecció de dona
+CompDimension: s'obté la composició del materials i els seus percentatges
 
-
-## Contingut
-
-el contingut del dataset està format per:
-  - Nom
-  - Preu
-  - Descripció
-  - Composició
-  - Col.lecció Join Life
+#### Contingut itemDimension
+##### ItemDimension:
+  - item_code: codi de cada article
+  - item_name: nom de l'article
+  - item_desc: descripció de l'article
+  - join_life: pertany a la línia ecològica
+  - joinlife_title: material reciclat o ecològic
+  - joinlife_desc: descripció del material reciclat o ecològic
+  - item_price: preu en cèntims
   
-
+##### compDimension:
+  - item_code: codi de cada article
+  - part_name: zona de la peça on es descriurà la composició
+  - material: material del que esta composat l'article
+  - percentatge: percentatge del material que composa l'article
 
 ## Inspiració
 
 S'ha obtingut el dataset mencionat per tal de poder dur a terme un estudi de: 
-- Quin és el ús de materies primes per a fer les diferents peces. 
-- Es pretendrà analitzar quin és el consum energetic i quin és el volum de recursos naturals utilitzats en el procés de fabricació.
-- Quin és el impacte economic.
+- Quin és el ús de matèries primes per a fer les diferents peces. 
+- Es pretendrà analitzar quin és el consum energètic i quin és el volum de recursos naturals utilitzats en el procés de fabricació.
+- Quin és el impacte econòmic.
+
+Per a dur a terme l'estudi s'adjunta com a documentació addicional per a poder dur a terme l'estudi.
 
 
 
+## Fonts 
 
-
-font: https://www.researchgate.net/publication/340635670_The_environmental_price_of_fast_fashion
+Zara Sitemap: https://www.zara.com/sitemaps/sitemap-index.xml.gz
+https://www.researchgate.net/publication/340635670_The_environmental_price_of_fast_fashion
 https://www.contreebute.com/blog/que-es-el-fast-fashion-y-por-que-esta-haciendo-de-la-moda-un-negocio-insostenible
-
-
-
---------------
-
-tela necesaria per a les peces (Ample[m] x llarg[m])[m2]:
-
-| Peces                           | Ample [m] | Larg [m] | TOTAL [m^2] |
-| ------------------------------- |:---------:| :-------:|------------:|
-| minifaldilla                    |   0,50    |   1,50   |    0,750    |
-| faldilla mitja cama             |   0,75    |   1,50   |    1,125    |
-| faldilla llarga                 |   1,00    |   1,50   |    1,500    |
-| Pantalons llargs                |   1,10    |   1,50   |    1,650    |
-| Jaqueta                         |   1,50    |   1,50   |    2,250    |
-| Brusa maniga curta / samarreta  |   1,25    |   1,50   |    1,875    |
-| Brusa maniga llarga / samarreta |   1,50    |   1,50   |    2,250    |
-| Vestit curt                     |   1,25    |   1,50   |    1,875    |
-| Vestit maniga                   |   1,75    |   1,50   |    2,625    |
-
-
-- minifaldilla : 0,50 x 1,50 = 0,75 m^2
-- faldilla mitja cama: 0,75 x 1,50 = 1,125 m^2
-- faldilla llarga: 1,00 x 1,50 = 1,5 m^2
-- Pantalons llargs: 1,10 x 1,50 = 1,65 m^2
-- Jaqueta: 1,50 x 1,50 = 2,25 m^2
-- Brusa maniga curta / samarreta: 1,25 x 1,50 = 1,875 m^2
-- Brusa maniga llarga / samarreta: 1,50 x 1,50 = 2,25 m^2
-- Vestit curt: 1,25 x 1,50 = 1,875 m^2
-- Vestit maniga: 1,75 x 1,50 = 2,625 m^2
-
-font= https://www.ohmotherminediy.com/aprender-coser-cuanta-tela-comprar-para/
-
---------------
-
-
-KG of CO2 emissions per ton of spun fiber:
-
-| Tables                     | crop cultivation  | fiber production  | TOTAL |
-| -------------------------- |:-----------------:| :----------------:|------:|
-| polyester USA              | 0.00              | 9.52              | 9.52  |
-| cotton, conventional, USA  | 4.20              | 1.70              | 5.90  |
-| hemp, conventional         | 1.90              | 2.15              | 4.05  |
-| cotton, organic, India     | 2.00              | 1.80              | 3.80  |
-| cotton, organic, USA       | 0.90              | 1.45              | 2.35  |
-
-
-
-Embodied Energy used in production of various fibers:
-
-| Tables            | energy use in MJ per KG of fiber: |
-| ------------------|----------------------------------:|
-| flax fibre (MAT)  | 10                                |
-| cotton            | 55                                |
-| wool              | 63                                |
-| Viscose           | 100                               |
-| Polypropylene     | 115                               | 
-| Polyester         | 125                               | 
-| acrylic           | 175                               | 
-| Nylon             | 250                               | 
-
-
-source: https://oecotextiles.blog/2011/01/19/estimating-the-carbon-footprint-of-a-fabric/
-
