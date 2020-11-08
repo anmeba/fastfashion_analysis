@@ -15,6 +15,8 @@ Aquest fenomen genera impactes ecològics com són l’alt consum de recursos na
 
 Podeu trobar la imatge adjunta a la carpeta de documents.
 
+![hamburoba](hamburoba.jpeg)
+
 ## Descripció del dataset
 
 El dataset proposat està composat per dos fitxer csv 
