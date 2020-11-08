@@ -23,21 +23,7 @@ El dataset proposat està composat per dos fitxer csv
 itemDimension: es recull la informació de les peces de la col·lecció de dona
 CompDimension: s'obté la composició del materials i els seus percentatges
 
-#### Contingut itemDimension
-##### ItemDimension:
-  - **item_code**: codi de cada article
-  - **item_name**: nom de l'article
-  - **item_desc**: descripció de l'article
-  - **join_life**: pertany a la línia ecològica
-  - **joinlife_title**: material reciclat o ecològic
-  - **joinlife_desc**: descripció del material reciclat o ecològic
-  - **item_price**: preu en cèntims
-  
-##### compDimension:
-  - **item_code**: codi de cada article
-  - **part_name**: zona de la peça on es descriurà la composició
-  - **material**: material del que esta composat l'article
-  - **percentatge**: percentatge del material que composa l'article
+Per a obtenir informació detalla, ho podeu trobar al document [dataset_description](https://github.com/anmeba/fastfashion_analysis/blob/main/docs/dataset_description.md)
 
 ## Inspiració
 
