@@ -1,6 +1,12 @@
 # fastfashion_analysis
 
 
+font: https://www.researchgate.net/publication/340635670_The_environmental_price_of_fast_fashion
+https://www.contreebute.com/blog/que-es-el-fast-fashion-y-por-que-esta-haciendo-de-la-moda-un-negocio-insostenible
+
+
+
+--------------
 
 tela necesaria per a les peces (Ample[m] x llarg[m])[m2]:
 
