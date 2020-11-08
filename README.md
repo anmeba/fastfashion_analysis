@@ -1,5 +1,6 @@
 # Fast Fashion eco commitment Dataset
 
+## Context
 
 Entenem com a **Fast Fashion** el fenomen per el qual s’introdueixen col·leccions de roba que segueixen les últimes tendències de la moda i que han estat dissenyades i fabricades de forma accelerada i a baix cost. Empreses com _Inditex_, amb _Zara_ com a marca insígnia, abanderen aquesta filosofia. 
 
