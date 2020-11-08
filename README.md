@@ -28,10 +28,10 @@ CompDimension: s'obté la composició del materials i els seus percentatges
   - **item_price**: preu en cèntims
   
 ##### compDimension:
-  - item_code: codi de cada article
-  - part_name: zona de la peça on es descriurà la composició
-  - material: material del que esta composat l'article
-  - percentatge: percentatge del material que composa l'article
+  - **item_code**: codi de cada article
+  - **part_name**: zona de la peça on es descriurà la composició
+  - **material**: material del que esta composat l'article
+  - **percentatge**: percentatge del material que composa l'article
 
 ## Inspiració
 
