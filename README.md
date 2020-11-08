@@ -19,13 +19,13 @@ CompDimension: s'obté la composició del materials i els seus percentatges
 
 #### Contingut itemDimension
 ##### ItemDimension:
-  - item_code: codi de cada article
-  - item_name: nom de l'article
-  - item_desc: descripció de l'article
-  - join_life: pertany a la línia ecològica
-  - joinlife_title: material reciclat o ecològic
-  - joinlife_desc: descripció del material reciclat o ecològic
-  - item_price: preu en cèntims
+  - **item_code**: codi de cada article
+  - **item_name**: nom de l'article
+  - **item_desc**: descripció de l'article
+  - **join_life**: pertany a la línia ecològica
+  - **joinlife_title**: material reciclat o ecològic
+  - **joinlife_desc**: descripció del material reciclat o ecològic
+  - **item_price**: preu en cèntims
   
 ##### compDimension:
   - item_code: codi de cada article
