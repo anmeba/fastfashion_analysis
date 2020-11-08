@@ -52,7 +52,7 @@ que en aquest cas NO és identicador unitari. Consta d'una fila per material de 
 
 ## Model de dades
 
-[IMATGE DATASET]
+![data_model](data_model.png)
 
 Les dues taules es relacionen pel camp *item_code*. Hi ha tantes entrades a la taula de composició
 per item com materials el composin. 
