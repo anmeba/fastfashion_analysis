@@ -29,7 +29,7 @@ diferents per diferents intàncies del mateix producte mentre existeixin diferè
 (e.g. material/color)
 
 |Nom del camp|Tipus de Dada|Descripció|
-|---|---|---|---|---|
+|---|---|---|
 |item_code|int|Codi únic per item|
 |item_name|str|Nom del item|
 |item_desc|str|Descripció de l'item|
@@ -44,7 +44,7 @@ Aquesta taula té una granularitat superior i es relaciona amb l'anterior per l'
 que en aquest cas NO és identicador unitari. Consta d'una fila per material de la composició. 
 
 |Nom del camp|Tipus de Dada|Descripció|
-|---|---|---|---|---|
+|---|---|---|
 |item_code|int|Clau forània per relacionar |
 |part_name|str|Part de la peça de la qual se'n desgranen els components (e.g. FORRO/EXTERIOR)|
 |material|str|Nom del material|
