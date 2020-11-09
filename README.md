@@ -33,10 +33,10 @@ S'ha obtingut el dataset mencionat per tal de poder dur a terme un estudi de:
 - Quin és el impacte econòmic.
 
 Per a dur a terme l'estudi s'adjunta com a [Informació complementaria](https://github.com/anmeba/fastfashion_analysis/blob/main/docs/Informacio_complementaria.docx):
-- consum energetic per a produir una samarreta o uns pantalons
-- consum energètic per tipus de fibra
-- densitat de les materies primes
-- quantitat de tela que es necessària per a cada peça de roba
+- Consum energetic per a produir una samarreta o uns pantalons
+- Consum energètic per tipus de fibra
+- Densitat de les materies primes
+- Quantitat de tela que es necessària per a cada peça de roba
 
 
 
