@@ -16,9 +16,9 @@ Aquest fenomen genera impactes ecològics com són l’alt consum de recursos na
 
 ## Imatge que descriu el dataset
 
-Podeu trobar la imatge adjunta a la carpeta de documents. [hamburoba_natural.png](https://github.com/anmeba/fastfashion_analysis/blob/main/docs/hamburoba_natural.png)
+Podeu trobar la imatge adjunta a la carpeta de documents. [hamburoba_natural.png](https://github.com/anmeba/fastfashion_analysis/blob/main/docs/images/hamburoba_natural.png)
 
-<img src = "https://github.com/anmeba/fastfashion_analysis/blob/main/docs/hamburoba_natural.png" width="409,6" height="307,2">
+<img src = "https://github.com/anmeba/fastfashion_analysis/blob/main/docs/images/hamburoba_natural.png" width="409,6" height="307,2">
 
 
 ## Descripció del dataset
