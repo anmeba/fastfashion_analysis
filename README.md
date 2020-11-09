@@ -20,8 +20,10 @@ Podeu trobar la imatge adjunta a la carpeta de documents. [hamburoba.jpeg](https
 ## Descripció del dataset
 
 El dataset proposat està composat per dos fitxer csv 
-itemDimension: es recull la informació de les peces de la col·lecció de dona
-CompDimension: s'obté la composició del materials i els seus percentatges
+
+[itemDimension](https://github.com/anmeba/fastfashion_analysis/blob/main/data/itemsDimension.csv): es recull la informació de les peces de la col·lecció de dona
+
+[CompDimension](https://github.com/anmeba/fastfashion_analysis/blob/main/data/compDimension.csv): s'obté la composició del materials i els seus percentatges
 
 Per a obtenir informació detalla, ho podeu trobar al document [dataset_description](https://github.com/anmeba/fastfashion_analysis/blob/main/docs/dataset_description.md)
 
