@@ -32,7 +32,11 @@ S'ha obtingut el dataset mencionat per tal de poder dur a terme un estudi de:
 - Es pretendrà analitzar quin és el consum energètic i quin és el volum de recursos naturals utilitzats en el procés de fabricació.
 - Quin és el impacte econòmic.
 
-Per a dur a terme l'estudi s'adjunta com a documentació addicional per a poder dur a terme l'estudi.
+Per a dur a terme l'estudi s'adjunta com a documentació addicional:
+- consum energetic per a produir una samarreta o uns pantalons
+- consum energètic per tipus de fibra
+- densitat de les materies primes
+- quantitat de tela que es necessària per a cada peça de roba
 
 
 
