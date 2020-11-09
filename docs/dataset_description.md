@@ -18,9 +18,9 @@ modificar els settings del codi per obtenir variacions en el dataset.
 
 # Contingut
 
-## Camps
+### Camps
 
-### Items Dimension
+#### Items Dimension
 
 Aquesta taula consta d'una fila per item tal i com classifica els items l'estructura
 interna de la pàgina, és a dir una entrada per categoria d'objecte marquetable. 
@@ -38,7 +38,7 @@ diferents per diferents instàncies del mateix producte mentre existeixin difer�
 |joinlife_desc|str|Descripció de l'acció ecològica empresa.|
 |item_price|int|preu en cèntims d'euro|
 
-### Composition Dimension
+#### Composition Dimension
 
 Aquesta taula té una granularitat superior i es relaciona amb l'anterior per l'item code,
 que en aquest cas NO és identicador unitari. Consta d'una fila per material de la composició. 
@@ -50,19 +50,19 @@ que en aquest cas NO és identicador unitari. Consta d'una fila per material de 
 |material|str|Nom del material|
 |percent|str|Percentatge del material respecte de la part de la peça (e.g. '10%')|
 
-## Model de dades
+### Model de dades
 
 ![data_model](data_model.png)
 
 Les dues taules es relacionen pel camp *item_code*. Hi ha tantes entrades a la taula de composició
 per item com materials el composin. 
 
-## Cronologia
+### Cronologia
 
 Aquest dataset és una mostra de la col·lecció tardaror-hivern 2020 obtinguda del lloc web de ZARA
 el 07/11/2020.
 
-## DOI i publicació a Zenodo
+### DOI i publicació a Zenodo
 
 Trobareu [aqui](https://zenodo.org/record/4261101#.X6fge1CCGUl) el dataset publicat a Zenodo:
 
@@ -86,7 +86,7 @@ els següents apartats:
 Per generar el dataset que presentem, per facilitat de classificació, es va córrer el codi diverses vegades, una per cada categoria d'item
 (*item_types* dels settings), modificant-ne el primer nombre del codi d'item (*code* a settings).
 
-## Settings
+### Settings
 
 L'apartat de settings està pensat de manera que es pugui alterar la sortida en tots el seus aspectes significatius partint sempre de la
 mateixa font original (la url del sitemap del loc web de ZARA). Acte seguit trobareu una guia de com utilitzar els settings: 
@@ -116,7 +116,7 @@ mateixa font original (la url del sitemap del loc web de ZARA). Acte seguit trob
 * **code**: Enter. L'índex de l'item al iterar es sumarà al codi en qüestió. Si s'executa el codi vàries vegades sense canviar de dataset, s'aconsella canviar
         el primer dígit per separar-ne les execucions. 
 
-## Funcions
+### Funcions
 
 Les funcions estan pròpiament documentades al codi, no obstant això cal mencionar la manera com estan agrupades que ressegueix el camí
 que s'ha seguit per l'estructura del lloc web:
