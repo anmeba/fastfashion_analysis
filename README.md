@@ -5,7 +5,7 @@
 
 Entenem com a **Fast Fashion** el fenomen per el qual s’introdueixen col·leccions de roba que segueixen les últimes tendències de la moda i que han estat dissenyades i fabricades de forma accelerada i a baix cost. Empreses com _Inditex_, amb _Zara_ com a marca insígnia, abanderen aquesta filosofia. 
 
-Aquest fenomen genera impactes ecològics com són l’alt consum de recursos naturals i productes químics a més de la generació d’abocaments i emissions. La industria de la moda es troba entre les més contaminats del món. 
+Aquest fenomen genera impactes ecològics com són l’alt consum de recursos naturals i productes químics a més de la generació d’abocaments i emissions. La industria de la moda es troba entre les més contaminats del món, mentres que l'accent segueix posant-se en les actituds individuals dels consumidors, que creixen en consciència sobre aquestes qüestions. A partir d'aquesta circumstància, moltes marques de fast fashion treuen col·leccions amb reclam ecològista i sovint a preus més alts.  
 
 
 ## Membres de l'equip
@@ -28,7 +28,11 @@ El dataset proposat està composat per dos fitxer csv:
 - [itemDimension](https://github.com/anmeba/fastfashion_analysis/blob/main/data/itemsDimension.csv): es recull la informació de les peces de la col·lecció de dona.
 - [CompDimension](https://github.com/anmeba/fastfashion_analysis/blob/main/data/compDimension.csv): s'obté la composició del materials i els seus percentatges.
 
-Per a obtenir informació detalla, ho podeu trobar al document [dataset_description](https://github.com/anmeba/fastfashion_analysis/blob/main/docs/dataset_description.md)
+Per a obtenir informació detalla, accediu al document [dataset_description](https://github.com/anmeba/fastfashion_analysis/blob/main/docs/dataset_description.md), on trobareu les seccions:
+ * **Dataset Description** per una desripció detallada del dataset.
+ * **Materials i Mètodes** per una explicació de com s'ha obtingut el dataset i com es podria reutilitzar el codi. 
+
+
 
 
 ## Inspiració
