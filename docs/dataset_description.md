@@ -1,16 +1,16 @@
 # Descripció del dataset
 
-Tai i com s'explica a l'apartat de *Motivació i Context* el nostre objectiu és aproximar-nos a aquestes dades
+Tal i com s'explica a l'apartat de *Motivació i Context* el nostre objectiu és aproximar-nos a aquestes dades
 per tal de fer un anàlisi preu/impacte ecològic entre les col·leccions ecològiques i no ecològiques d'una 
 marca de fast fashion com és Zara. Per tal de fer això, aquest dataset conté tres tipus de dades referents als
-items de la col·leció tardor-hivern:
+items de la col·lecció tardor-hivern:
 
 * Descripció/Composició de a peça
 * Etiqueta Eco
 * Preu
 
-Amb la descripció/composició juntament amb l'etiqueta, el nostre objectiu és aproximar un estimat realtiu 
-de l'impacte ecològic per peça. Mentre que el preu ens proporciona la informació comercial del prducte.
+Amb la descripció/composició juntament amb l'etiqueta, el nostre objectiu és aproximar un estimat relatiu 
+de l'impacte ecològic per peça. Mentre que el preu ens proporciona la informació comercial del producte.
 
 És important mencionar que el nostre dataset és una mostra representativa (277 items) però no es tracta
 de la col·lecció al complet. A l'apartat **Materials i mètodes** es detalla la seva obtenció i com es podríen
@@ -25,7 +25,7 @@ modificar els settings del codi per obtenir variacions en el dataset.
 Aquesta taula consta d'una fila per item tal i com classifica els items l'estructura
 interna de la pàgina, és a dir una entrada per categoria d'objecte marquetable. 
 Això vol dir que si bé no hi ha una entrada per talla de producte, pot haver entrades
-diferents per diferents intàncies del mateix producte mentre existeixin diferències composicionals
+diferents per diferents instàncies del mateix producte mentre existeixin diferències composicionals
 (e.g. material/color)
 
 |Nom del camp|Tipus de Dada|Descripció|
@@ -72,7 +72,7 @@ Trobareu [aqui](https://zenodo.org/record/4261101#.X6fge1CCGUl) el dataset publi
 
 # Materials i mètodes
 
-El notebook que hem emprat per obtenir aquest datasetestà estructurat de manera que tenim per separat
+El notebook que hem emprat per obtenir aquest dataset està estructurat de manera que tenim per separat
 els següents apartats:
 
 * Llibreries: les llibreries importades pel projecte. 
@@ -80,8 +80,8 @@ els següents apartats:
             la sortida.
 * Functions: Compendi de funcions que s'utilitzen per obtenir el dataset. A l'apartat **Funcions** s'expliquen més en detall. S'han
              dissenyat per ser modulars i la sortida mal·leable per paràmetres.
-* Main: Secció on es creen els datasets i s'executen les funcions per omplir-los. Està etructurat així per
-        poder comentar facilment la definició del dataset en cas de voler concatenar dades d'execucions diferents.
+* Main: Secció on es creen els datasets i s'executen les funcions per omplir-los. Està estructurat així per
+        poder comentar fàcilment la definició del dataset en cas de voler concatenar dades d'execucions diferents.
 
 Per generar el dataset que presentem, per facilitat de classificació, es va córrer el codi diverses vegades, una per cada categoria d'item
 (*item_types* dels settings), modificant-ne el primer nombre del codi d'item (*code* a settings).
@@ -99,7 +99,7 @@ mateixa font original (la url del sitemap del loc web de ZARA). Acte seguit trob
 * **gender**: Aquest paràmetre és un patró que permet filtrar el gènere i edat de la roba que volem escrapejar. Lògicament, depèn del paràmetre *country* doncs
         per exemple al catàleg espanyol les opcions serien 'mujer','hombre' o 'niño', mentre que al francès seria 'femme', 'homme' o 'infant'.
 
-* **item_types**: Aquest paràmetre és una llista de patrons per cercar grups d'items. També depèn liguísticament del setting *country*. En aquest cas es pot entrar
+* **item_types**: Aquest paràmetre és una llista de patrons per cercar grups d'items. També depèn lingüísticament  del setting *country*. En aquest cas es pot entrar
             tant un grup individual (e.x. ['blusa'], on retornaria el catàleg de bruses) com una sèrie d'items (e.g. ['blusa','falda'] retornaria el catàleg
             de bruses i el de faldilles).
 
@@ -113,7 +113,7 @@ mateixa font original (la url del sitemap del loc web de ZARA). Acte seguit trob
 
 * **file_name_comp**: nom del fitxer on volem guardar les nostres dades de composició (e.g. 'composition.csv')
 
-* **code**: Enter. L'índex de l'item al iterar es sumarà al codi en qüestió. Si s'executa el codi vàries vegades sense canvair de dataset, s'aconsella canviar
+* **code**: Enter. L'índex de l'item al iterar es sumarà al codi en qüestió. Si s'executa el codi vàries vegades sense canviar de dataset, s'aconsella canviar
         el primer dígit per separar-ne les execucions. 
 
 ## Funcions
