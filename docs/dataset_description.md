@@ -1,6 +1,6 @@
 # Descripció del dataset
 
-Tal i com s'explica a l'apartat de *Motivació i Context* el nostre objectiu és aproximar-nos a aquestes dades
+Tal i com s'explica al README la nostra motivació i el nostre objectiu és aproximar-nos a aquestes dades
 per tal de fer un anàlisi preu/impacte ecològic entre les col·leccions ecològiques i no ecològiques d'una 
 marca de fast fashion com és Zara. Per tal de fer això, aquest dataset conté tres tipus de dades referents als
 items de la col·lecció tardor-hivern:
