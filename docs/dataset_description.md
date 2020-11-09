@@ -121,7 +121,7 @@ mateixa font original (la url del sitemap del loc web de ZARA). Acte seguit trob
 Les funcions estan pròpiament documentades al codi, no obstant això cal mencionar la manera com estan agrupades que ressegueix el camí
 que s'ha seguit per l'estructura del lloc web:
 
- * REQUESTS - SOUP: 
- * ZARA SITE NAVIGATION:
- * DATAFRAME FILLING:
- * STORAGE:
+ * REQUESTS - SOUP: Aquesta secció engloba les funcions que consisteixen en realitzar la request a una url i insertar-la dins d'un objecte soup del pack Beautiful Soup que en permet la navegació.
+ * ZARA SITE NAVIGATION: En aquesta secció trobareu les diferents funcions que nivell a nivell van endinsant-se per l'estructura del catpaleg del gegant d'Inditex. 
+ * DATAFRAME FILLING: Aquest a funció extreu tota la informació de cada item navegant per un script de javascript present en cada pàgina on s'hi han definit les caracteríastiques de cada peça.
+ * STORAGE: funció que permet abocar els continguts d'un dataframe en un fitxer pla CSV. 
