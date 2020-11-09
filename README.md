@@ -48,3 +48,4 @@ Per a dur a terme l'estudi s'adjunta com a [Informació complementaria](https://
 ## Fonts 
 
 Zara Sitemap: https://www.zara.com/sitemaps/sitemap-index.xml.gz
+Icona 100% Natural: https://www.iconfinder.com/
